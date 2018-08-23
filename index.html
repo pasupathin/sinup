@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Angular js 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="test" ng-init="firstName='Brahmaiah'">
+            <h2>
+                My name is <span ng-bind="firstName"></span>
+            </h2>
+        </div>
+        <!-- ends test -->
+        <div class="controllerTest" ng-controller="myCtrl">
+            {{firstName1}}
+        </div>
+        <!-- ends controllerTest -->
+    </div>
+    <!-- ends conatiner tag -->
+
+    <!-- scripts start tag -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/firstCtrl.js"></script>
+        <script src="js/all.js"></script>
+    <!-- scripts end tag -->
+</body>
+</html>
